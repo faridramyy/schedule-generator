@@ -1,0 +1,67 @@
+{
+  "rules": [
+    {
+      "type": "coverage",
+      "priority": 1,
+      "hard": true,
+      "applies_to": "global",
+      "data": {
+        "start_time": "09:00",
+        "end_time": "21:00"
+      }
+    },
+    {
+      "type": "limit",
+      "priority": 1,
+      "hard": false,
+      "applies_to": "global",
+      "data": {
+        "metric": "working_hours",
+        "value": "equal"
+      }
+    },
+    {
+      "type": "availability",
+      "priority": 1,
+      "hard": true,
+      "applies_to": "employee",
+      "data": {
+        "employee": "farid",
+        "must_work_with": "puja",
+        "condition": "training_period"
+      }
+    },
+    {
+      "type": "coverage",
+      "priority": 1,
+      "hard": true,
+      "applies_to": "global",
+      "data": {
+        "shifts": [
+          "morning",
+          "closing"
+        ]
+      }
+    },
+    {
+      "type": "coverage",
+      "priority": 1,
+      "hard": true,
+      "applies_to": "shift",
+      "data": {
+        "requirements": [
+          {
+            "shift_type": "morning",
+            "min": 3,
+            "max": 4
+          },
+          {
+            "shift_type": "night",
+            "min": 2,
+            "max": 3
+          }
+        ]
+      }
+    }
+  ]
+}
