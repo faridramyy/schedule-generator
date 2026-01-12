@@ -1,0 +1,33 @@
+[
+  {
+    "rule_id": "RULE_MANAGER_EARLY",
+    "type": "TIME_BOUND",
+    "filter": {
+      "role": "manager"
+    },
+    "params": {
+      "start_time": "07:00"
+    },
+    "hard": true
+  },
+  {
+    "rule_id": "RULE_SALES_START",
+    "type": "TIME_BOUND",
+    "filter": {
+      "role": "sales"
+    },
+    "params": {
+      "start_time": "09:00"
+    },
+    "hard": true
+  },
+  {
+    "rule_id": "RULE_MAX_SHIFTS",
+    "type": "SUM_LIMIT",
+    "filter": {},
+    "params": {
+      "max_hours": 5
+    },
+    "hard": true
+  }
+]

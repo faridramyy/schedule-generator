@@ -1,0 +1,22 @@
+[
+  {
+    "id": "EMP001",
+    "name": "Michael",
+    "roles": ["manager"]
+  },
+  {
+    "id": "EMP002",
+    "name": "Sarah",
+    "roles": ["sales"]
+  },
+  {
+    "id": "EMP003",
+    "name": "Ahmed",
+    "roles": ["sales"]
+  },
+  {
+    "id": "EMP004",
+    "name": "Emily",
+    "roles": ["warehouse"]
+  }
+]

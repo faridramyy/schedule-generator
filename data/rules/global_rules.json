@@ -1,0 +1,45 @@
+[
+  {
+    "id": "RULE_MANAGER_EARLY",
+    "name": "Managers must start at 7",
+    "type": "TIME_WINDOW",
+    "scope": "GLOBAL",
+    "priority": 100,
+    "hard": true,
+    "conditions": {
+      "role": "manager"
+    },
+    "constraint": {
+      "start_time": "07:00"
+    },
+    "active": true
+  },
+  {
+    "id": "RULE_SALES_START",
+    "name": "Sales staff start at 9 or later",
+    "type": "TIME_WINDOW",
+    "scope": "GLOBAL",
+    "priority": 80,
+    "hard": true,
+    "conditions": {
+      "role": "sales"
+    },
+    "constraint": {
+      "start_time": "09:00"
+    },
+    "active": true
+  },
+  {
+    "id": "RULE_MAX_SHIFTS",
+    "name": "Max 5 shifts per week",
+    "type": "LIMIT",
+    "scope": "GLOBAL",
+    "priority": 50,
+    "hard": true,
+    "conditions": {},
+    "constraint": {
+      "max_hours": 5
+    },
+    "active": true
+  }
+]
